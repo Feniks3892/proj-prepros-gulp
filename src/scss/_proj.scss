@@ -1,0 +1,203 @@
+@import '_variables.scss';
+
+/*---Proj---*/
+/*---Proj---*/
+.container__proj {
+	display: block;
+	padding-top: 0;
+	padding-bottom: 70px;
+}
+
+.proj__header {
+	margin-bottom: 12px;
+	font-family: 'TT Firs Neue700';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 31px;
+	color: $colorBlack;
+}
+
+.card::before {
+	content: '';
+	position: absolute;
+	top: 7px;
+	right: 7px;
+	padding: 6px 14px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: $colorWhite;
+	background-color: $colorBlack;
+	z-index: 10;
+}
+
+.card__1::before {
+	content: '#пейзаж';
+}
+
+.card__2::before {
+	content: '#портрет';
+}
+
+.card__3::before {
+	content: '#предмет';
+}
+
+.card__4::before {
+	content: '#fuji';
+}
+
+.card__5::before {
+	content: '#проектзабвение';
+}
+
+.card__6::before {
+	content: '#ретушь';
+}
+
+.card__7::before {
+	content: '#портрет';
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 30px;
+	counter-reset: card;
+}
+
+.card {
+	position: relative;
+	font-size: 16px;
+	}
+
+.card-image-wrap {
+	position: relative;
+	height: 185px;
+	background-color: $colorGrey;
+}
+
+.image {
+	padding: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.card-big {
+	min-height: 300px;
+	padding: 40px;
+	color: $colorWhite;
+	background-color: $colorGrey;
+	background-size: cover;
+	background-position: center;
+}
+
+.card-big-1 {
+	background-image: url('../img/proj1_right_hd.jpg');
+}
+
+.card-big-2 {
+	background-image: url('../img/proj4_left_hd.jpg');
+}
+
+.card:nth-child(1) {
+	grid-area: one;
+}
+
+.card:nth-child(2) {
+	grid-area: two;
+}
+
+.card:nth-child(3) {
+	grid-area: three;
+}
+
+.card:nth-child(4) {
+	grid-area: four;
+}
+
+.card:nth-child(5) {
+	grid-area: five;
+}
+
+.card:nth-child(6) {
+	grid-area: six;
+}
+
+.card:nth-child(7) {
+	grid-area: seven;
+}
+
+.card__text {
+	max-width: 292px;
+	margin-top: 18px;
+	margin-bottom: 13px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.card__date {
+	padding-left: 15px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 22px;
+	color: $colorGrey;
+	background: url('../img/calend.svg') left center no-repeat transparent;
+	background-size: contain;
+}
+
+.card-big .card__date {
+	padding-left: 17px;
+	color: $colorWhite;
+	background: url('../img/mdi_calendar_today.png') left center no-repeat transparent;
+}
+
+.card__btn {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	padding: 15px 22px;
+	border: 3px solid $colorOrange1;
+	outline: none;
+	background-color: transparent;
+	transition: 0.5s ease-in-out;
+}
+
+.card__btn:hover {
+	background-color: $colorOrange1;
+	transition: 0.5s;
+}
+
+.card__btn:focus {
+	border: 3px solid $colorOrange2;
+	background-color: $colorOrange1;
+	transition: 0.5s;
+}
+
+.card__btn:active {
+	border: 3px solid $colorOrange3;
+	background-color: $colorOrange3;
+	transition: 0.5s;
+}
+
+.card__btn-link {
+	font-family: 'Roboto700';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: $colorWhite;
+	outline: none;
+}

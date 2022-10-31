@@ -1,0 +1,27 @@
+/*---Roboto-400---*/
+@font-face {
+    font-family: 'Roboto';
+    src: local('');
+    src: url('../fonts/Roboto-Light.woff2') format('woff2'),
+        url('../fonts/Roboto-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /*---TT Firs Neue-700---*/
+  @font-face {
+    font-family: 'TT Firs Neue700';
+    src: local('');
+    src: url('../fonts/TTFirsNeue-Bold.woff2') format('woff2'),
+        url('../fonts/TTFirsNeue-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+  /*---TT Firs Neue-400---*/
+  @font-face {
+    font-family: 'TT Firs Neue';
+    src: local('');
+    src: url('../fonts/TTFirsNeue-Light.woff2') format('woff2'),
+        url('../fonts/TTFirsNeue-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }

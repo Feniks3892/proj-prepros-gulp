@@ -1,0 +1,226 @@
+@import '_variables.scss';
+
+/*---header---*/
+.header {
+	height: 80px;
+	align-self: center;
+	color: $colorWhite;
+	background-color: $colorBlack;
+}
+
+.header__container {
+	padding-top: 27px;
+	padding-bottom: 25px;
+}
+
+.burger {
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	display: none;
+	margin-right: 10px;
+	width: 30px;
+	height: 30px;
+}
+
+.burger__line {
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: $colorWhite;
+	transition: 0.5s ease-in-out;
+}
+
+.burger__line.active {
+	display: none;
+	transition: 0.5s;
+}
+
+.burger__line::before,
+.burger__line::after {
+content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: $colorWhite;
+}
+
+.burger__line::before {
+	top: 7px;
+	width: 80%;
+}  
+
+.burger__line::after {
+	top: -7px;
+} 
+
+.menu-close {
+	position: absolute;
+	top: 0;
+	display: none;
+	width: 100%;
+	height: 2px;
+	transition: 0.5s ease-in-out;
+}
+
+.menu-close.active {
+	display: block;
+	transition: 0.5s;
+}
+
+.menu-close::before,
+.menu-close::after {
+content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: $colorWhite;
+}
+
+.menu-close::before {
+	transform: rotate(45deg) translateY(0%);
+	transition: 0.5s ease-in-out;
+	}
+
+.menu-close::after {
+	transform: rotate(-45deg) translateY(-50%);
+	transition: 0.5s ease-in-out;
+}
+
+.logo {
+	cursor: pointer;
+}
+
+.nav {
+	display: flex;
+}
+
+.nav__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nav__item {
+	margin-right: 40px;
+	font-family: 'TT Firs Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	display: flex;
+	align-items: center;
+	color: $colorWhite;
+	outline: none;
+	border: none;
+}
+
+.nav__link {
+	transition: 0.5s ease-in-out;
+	outline: none;
+	border: none;
+}
+
+.nav__link:hover {
+	color: $colorOrange1;
+	transition: 0.5s;
+}
+
+.nav__link:focus {
+	background-color: $colorOrange2;
+	box-shadow: 0 0 0 5px $colorOrange2;
+	transition: 0.2s;
+}
+
+.nav__link:active {
+	color: $colorOrange3;
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.search {
+	width: 30px;
+	height: 30px;
+	font-size: 1.5em;
+	z-index: 10;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	transition: 0.5s ease-in-out;
+}
+
+.search-box {
+	position: absolute;
+	right: 17%;
+	transform: scaleX(0);
+	width: 55%;
+	height: 35px;
+	display: flex;
+	background-color: $colorBlack;
+	align-items: center;
+	padding: 0 30px;
+	transition: 0.7s ease-in-out;
+}
+
+.search-box.active {
+	transform: scaleX(1);
+	transition: 0.7s;
+}
+
+.search-box input {
+	width: 100%;
+	border: none;
+	outline: none;
+	height: 35px;
+	font-size: 16px;
+	line-height: 21px;
+	align-items: center;
+	color: $colorWhite;
+	background-color: transparent;
+	border-bottom: 1px solid $colorWhite;
+	transition: 0.5s ease-in-out;
+}
+
+.search-box input:hover,
+.search-box input:focus {
+	border-bottom: 1px solid $colorOrange1;
+	transition: 0.5s;
+}
+
+.search-box input:active {
+	border-bottom: 1px solid $colorOrange3;
+	transition: 0.5s;
+}
+
+.search-box input::placeholder {
+	color: $colorWhite;
+}
+
+.search-btn {
+	display: block;
+	width: 25px;
+	height: 25px;
+	transition: 0.5s ease-in-out;
+}
+
+.search-btn.active {
+	display: none;
+	transition: 0.5s;
+}
+
+.close-btn {
+	display: none;
+	width: 25px;
+	height: 25px;
+	transition: 0.5s ease-in-out;
+}
+
+.close-btn.active {
+	display: block;
+	transition: 0.5s;
+}

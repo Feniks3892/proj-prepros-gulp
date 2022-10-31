@@ -1,0 +1,106 @@
+@import '_variables.scss';
+
+  /*----hero----*/
+  .reset-title {
+	margin-bottom: 18px;
+  }
+  
+  .hero-wrap__container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-top: 41px;
+	margin-bottom: 68px;
+	gap: 30px;
+  }
+  
+  .announcements__card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	min-height: 630px;
+	padding: 40px;
+	color: $colorWhite;
+	background-color: yellowgreen;
+	background-image: url('../img/hero1_hd.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+  }
+
+  .announcements__card-label{
+	position: absolute;
+	top: 12px;
+	right: 20px;
+	padding: 7px 15px;
+	background-color: $colorBlack;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	align-items: center;
+	text-align: center;
+	color: $colorWhite;
+  }
+  
+  .past__list {
+	display: grid;
+	gap: 30px;
+  }
+  
+  .past__card {
+	position: relative;
+	overflow: hidden;
+	min-height: 253px;
+	background-color: darkcyan;
+  }
+  
+  .past__card--big {
+	grid-column: span 2;
+	min-height: 300px;
+  }
+  
+  .past__image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+  }
+
+  .card-text {
+	margin-bottom: 3px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: $colorWhite;
+  }
+
+  .announcements .reset-title {
+	max-width: 430px;
+	font-family: 'TT Firs Neue700';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 104%;
+	display: flex;
+	align-items: flex-end;
+	color: $colorWhite;
+  }
+
+  .past .reset-title {
+	font-family: 'TT Firs Neue700';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 104%;
+	display: flex;
+	align-items: flex-end;
+	color: $colorBlack;
+  }

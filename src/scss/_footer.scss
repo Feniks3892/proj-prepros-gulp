@@ -1,0 +1,82 @@
+@import '_variables.scss';
+
+/*---Footer---*/
+.footer {
+	width: 100%;
+	min-height: 106px;
+	background-color: $colorBlack;
+}
+
+.footer__container {
+	display: flex;
+	padding-top: 24px;
+	padding-bottom: 16px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__left {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__logo-text {
+	margin-top: 6px;
+	font-family: 'TT Firs Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	align-items: center;
+	color: #E9E9E9;
+}
+
+.footer__center-text {
+	max-width: 316px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: $colorGrey;
+}
+
+.footer__right {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__right-text {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: $colorGrey;
+}
+
+.footer__social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 8px;
+	cursor: pointer;
+}
+
+.footer__social-icon {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-size: contain;
+	fill: $colorGrey;
+	transition: fill 0.3s ease-in-out;
+}
+
+.footer__social-icon:hover {
+	fill: $colorOrange1;
+	transition: 0.3s;
+}
+
+.footer-icon1 {
+	margin-right: 20px;
+}

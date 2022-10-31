@@ -1,0 +1,127 @@
+@import '_variables.scss';
+
+  /*---about---*/
+ /*---about---*/
+ .about {
+	width: 100%;
+	min-height: 500px;
+	margin-bottom: 68px;
+	padding-top: 30px;
+	padding-bottom: 70px;
+	background-color: $colorBlack;
+  }
+
+  .about__container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+  }
+
+  .about__header {
+	margin-bottom: 5px;
+	font-family: 'TT Firs Neue700';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 31px;
+	color: $colorWhite;
+  }
+
+  .about__img {
+	margin-bottom: 24px;
+  }
+
+  .about__title {
+	margin-bottom: 16px;
+	font-family: 'TT Firs Neue700';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 31px;
+	align-items: center;
+	color: $colorWhite;
+  }
+
+  .about__wrap {
+	
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+
+  }
+
+  .about__text {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: $colorGrey;
+}
+
+	.about__form-content {
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.about__form {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.about__form-input {
+		width: 100%;
+		height: 100%;
+		padding-left: 23px;
+		color: $colorWhite;
+		background: $colorBlackLight;
+		outline: none;
+		border: none;
+		transition: 0.5s ease-in-out;
+}
+
+	.about__form-input::placeholder {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		color: $colorGrey;
+	}
+
+	.about__form-input:focus {
+		box-shadow: 0 0 0 1px $colorOrange1;
+		transition: 0.5s;
+	}
+	
+	.about__form-input:active {
+		border: none;
+	}
+
+	.about__form-input:hover::placeholder {
+		color: $colorOrange1;
+	}
+
+	#formA {
+		position: relative;
+	}
+
+	.input-box {
+		position: relative;
+		width: 100%;
+		height: 50px;
+		margin-right: 30px;
+	}
+	
+	#formA .input-box .just-validate-error-label {
+		content: '';
+		position: absolute;
+		top: 2px;
+		left: 25px;
+		font-size: 9px;
+		line-height: 11px;
+	}
+	
